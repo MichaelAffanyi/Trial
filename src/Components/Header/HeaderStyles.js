@@ -67,8 +67,11 @@ export const Logo = styled.img`
     margin-right: 40px;
     cursor: pointer;
 
-    @media (max-width: 450px) {
-            width: 128px;
+    @media (max-width: 950px) {
             margin-right: unset;
         }
+
+    /* @media (max-width: 450px) {
+            width: 128px;        
+        } */
 `

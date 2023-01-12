@@ -6,6 +6,12 @@ import {
     FooterBottom
 } from './FooterStyles'
 
+import {
+    facebook,
+    pinterest,
+    twitter
+} from '../SVGs'
+
 function Footer() {
   return (
     <FooterComponent>
@@ -18,29 +24,28 @@ function Footer() {
         </FooterTop>
         <FooterBottom>
             <div className='bottom_content'>
-                <div className='nav'>
-                    <Logo src='./assets/logo.svg' />
-                    <div className='nav_links'>
-                        <span>home</span>
-                        <span>about</span>
+                <div className='content'>
+                    <div className='nav'>
+                        <Logo src='./assets/logo.svg' />
+                        <div className='nav_links'>
+                            <span>home</span>
+                            <span>about</span>
+                        </div>
                     </div>
-                </div>
-                <div className='address'>
-                    <span>987  Hillcrest Lane</span>
-                    <span>Irvine, CA</span>
-                    <span>California 92714</span>
-                    <span>Call Us : 949-833-7432</span>
+                    <div className='address'>
+                        <span>987  Hillcrest Lane</span>
+                        <span>Irvine, CA</span>
+                        <span>California 92714</span>
+                        <span>Call Us : 949-833-7432</span>
+                    </div>
                 </div>
                 <div className='footer'>
                     <div className='svg'>
-                        <img src='./assets/icon-facebook.svg' alt='' />
-                        <img src='./assets/icon-pinterest.svg' alt='' />
-                        <img src='./assets/icon-twitter.svg' alt='' />
+                        {facebook}
+                        {pinterest}
+                        {twitter}
                     </div>
                     <span>Copyright 2020. All Rights Reserved</span>
-                    {/* <div className='copyright'>
-
-                    </div> */}
                 </div>
             </div>
         </FooterBottom>
