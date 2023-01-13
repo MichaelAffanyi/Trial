@@ -4,14 +4,16 @@ import {
     Nav
 } from './HeaderStyles'
 
-function Header() {
+function Header(props) {
+  // const [isOpen, setIsOpen] = useState(false)
   return (
     <Nav>
         <Logo src='./assets/logo.svg'/>
         <span>home</span>
         <span>about</span>
         <button>contact us</button>
-        <img src='./assets/icon-hamburger.svg' alt='' className='hamburger'/>
+        {props.isOpen ? <img src='./assets/icon-close.svg' alt='' className='hamburger' onClick={() => props.setIsOpen(!props.isOpen)}/> : <img src='./assets/icon-hamburger.svg' alt='' className='close' onClick={() => props.setIsOpen(!props.isOpen)}/>}
+        
     </Nav>
   )
 }

@@ -48,10 +48,11 @@ export const Nav = styled.div`
             display: none;
         }
     }
-    .hamburger {
+    .hamburger, .close {
         position: absolute;
         right: 0;
         display: none;
+        z-index: 10;
 
         @media (max-width: 450px) {
             display: block;
