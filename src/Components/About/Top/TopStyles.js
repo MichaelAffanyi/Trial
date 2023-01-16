@@ -36,6 +36,12 @@ export const Container = styled.div`
                 width: 100%;
             }
 
+            @media (max-width: 450px) {
+                height: 40px;
+                font-size: 40px;
+                line-height: 40px;
+            }
+
         }
 
         .aside {
@@ -68,7 +74,7 @@ export const Container = styled.div`
                 @media (max-width: 450px) {
                     font-size: 15px;
                     height: 196px;
-                    width: 327px;
+                    width: 317px;
                 }
             }
             
@@ -76,6 +82,10 @@ export const Container = styled.div`
                 width: 530px;
                 height: 140px;
                 margin: 0 auto;
+            }
+
+            @media (max-width: 450px) {
+                width: 317px;
             }
         }
 
@@ -88,6 +98,8 @@ export const Container = styled.div`
         @media (max-width: 450px) {
             width: 327px;
             height: 252px;
+            justify-content: unset;
+            gap: 16px;
         }
     }
 
